@@ -9,6 +9,7 @@
 
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import HelloWorldApp from './screens/home';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    // alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
@@ -40,9 +41,7 @@ const styles = StyleSheet.create({
 
 const App = () => (
   <View style={styles.container}>
-    <Text style={styles.welcome}>We Live!</Text>
-    <Text style={styles.instructions}>To get started, edit App.js</Text>
-    <Text style={styles.instructions}>{instructions}</Text>
+    <HelloWorldApp />
   </View>
 );
 
