@@ -10,6 +10,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import HelloWorldApp from './screens/home';
+import ButtonBasics from './components/Button';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -41,6 +42,7 @@ const styles = StyleSheet.create({
 
 const App = () => (
   <View style={styles.container}>
+    <ButtonBasics />
     <HelloWorldApp />
   </View>
 );
